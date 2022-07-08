@@ -17,11 +17,11 @@ type DistributeLock struct {
 }
 
 // NewDistributeLock 创建分布式锁实例
-func NewDistributeLock(redis *redis.Client, key string, expire int) *DistributeLock {
+func NewDistributeLock(rds *redis.Client, key string, expire int) *DistributeLock {
 	return &DistributeLock{
 		key:    key,
 		expire: expire,
-		redis:  redis,
+		redis:  rds,
 	}
 }
 
