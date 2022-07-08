@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v7"
-	lock "github.com/seanshenhy/distribute-lock/v4"
+	lock "github.com/seanshenhy/distribute-lock/v2"
 )
 
 // 测试锁
